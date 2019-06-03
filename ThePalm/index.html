@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hotel The Palm *****</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--==========================
+    Cabezera
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><img src="img/logo.png" alt="" title=""><a href="#intro">THE <span>P</span>alm</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Inicio</a></li>
+          <li><a href="#about">Quien somos</a></li>
+          <li><a href="#habitaciones">Habitaciones</a></li>
+          <li><a href="#situacion">Situación</a></li>
+          <li><a href="#gallery">Fotos</a></li>
+          <li><a href="#supporters">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="" data-toggle="modal" data-target="#modalLRForm"><img src="img/user.png"></a></li>
+          <li class="reserva"><a href="#reserva">Reservar</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+  <!--==========================
+    Intro
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Los mejores<br><span> servicios </span> para su estancia</h1>
+    </div>
+  </section>
+ <!--==========================
+    seccion de iniciar session/ registrar
+  ============================-->
+  <section id="modal_registrar">
+    <!--Modal: iniciar session /registrar-->
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Modal cascading tabs-->
+          <div class="modal-c-tabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fa fa-user mr-1"></i>
+                Iniciar sessión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"><i class="fa fa-user-plus mr-1"></i>
+                Registrar</a>
+              </li>
+            </ul>
+            <!-- Tab panels -->
+            <div class="tab-content">
+              <!--Panel 1-->
+              <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                <!--Body-->
+                <div class="modal-body mb-1">
+                  <div class="md-form form-sm mb-5">
+                    <i class="fa fa-envelope prefix"></i>
+                    <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
+                    <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                  </div>
+
+                  <div class="md-form form-sm mb-4">
+                    <i class="fa fa-lock prefix"></i>
+                    <label data-error="wrong" data-success="right" for="modalLRInput11">Contraseña</label>
+                    <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                  </div>
+                  <div class="text-center mt-2">
+                    <button class="btn btn-info">Iniciar <i class="fa fa-sign-in ml-1"></i></button>
+                  </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <div class="options text-center text-md-right mt-1">
+                    <p>No estás registrado? <a href="#panel2" class="blue-text">Registrar</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+              <!--/.Panel 1-->
+    
+              <!--Panel 2-->
+              <div class="tab-pane fade" id="panel2" role="tabpanel">
+                <!--Body-->
+                <div class="modal-body">
+                  <div class="md-form form-sm mb-5">
+                    <i class="fa fa-envelope prefix"></i>
+                    <label data-error="wrong" data-success="right" for="modalLRInput12">Tu email</label>
+                    <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                  </div>
+    
+                  <div class="md-form form-sm mb-5">
+                    <i class="fa fa-lock prefix"></i>
+                    <label data-error="wrong" data-success="right" for="modalLRInput13">Tu contraseña</label>
+                    <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                  </div>
+    
+                  <div class="md-form form-sm mb-4">
+                    <i class="fa fa-lock prefix"></i>
+                    <label data-error="wrong" data-success="right" for="modalLRInput14">Repetir contraseña</label>
+                    <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                  </div>
+    
+                  <div class="text-center form-sm mt-2">
+                    <button class="btn btn-info">Registrar <i class="fa fa-sign-in ml-1"></i></button>
+                  </div>
+    
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <div class="options text-right">
+                    <p class="pt-1">Ya estás registrado? <a href="#panel1" class="blue-text">Iniciar sessión</a></p>
+                  </div>
+                  <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+              <!--/.Panel 2-->
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin del modal-->
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      quien somos
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>Sobre nuestro hotel</h2>
+            <p>El Hotel Atlantis es un resort que está situado en la isla Palma Jumeirah de Dubái, Emiratos Árabes Unidos.
+               Fue inaugurado el 20 de noviembre de 2008. El diseño arquitectónico se basa principalmente en el hotel Atlantis 
+               Paradise Island de las Bahamas. El hotel fue financiado por 
+              el magnate del cobre Chileno Tomás Arellano Contardo</p>
+
+            <p>El hotel consta de dos torres unidas por un puente, y un total de aproximadamente 2.000 habitaciones. 
+              Posee dos estaciones del monorriel que conecta el conjunto del resort con la sección principal de Palm Jumeirah. 
+              El hotel Atlantis también incluye un parque acuático de 16 ha, un centro de conferencias, y 1.858 m² de espacio 
+              al por menor. El costo del conjunto del resort está estimado en 1.200 millones de dólares.
+               Prácticamente es idéntico al Hotel Atlantis de las islas Bahamas del Mar Caribe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Sección de habitaciones
+    ============================-->
+    <section id="habitaciones" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Habitaciones</h2>
+          <p>Tipos de habitaciones</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="habitacion">
+              <img src="img/room/10.jpg" alt="Habitacion 10" class="img-fluid">
+              <div class="details">
+                <h3><a href="contenido/detalles-habitaciones.html">Habitacion Ocean</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="habitacion">
+              <img src="img/room/11.jpg" alt="habitacion 11" class="img-fluid">
+              <div class="details">
+                <h3><a href="contenido/detalles-habitaciones.html">Habitacion Palm</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="habitacion">
+              <img src="img/room/12.jpg" alt="Habitacion 12" class="img-fluid">
+              <div class="details">
+                <h3><a href="contenido/detalles-habitaciones.html"></a> Club Imperial</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="habitacion">
+              <img src="img/room/13.jpg" alt="Habitacion 13" class="img-fluid">
+              <div class="details">
+                <h3><a href="contenido/detalles-habitaciones.html">Suite Club Terrace</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="habitacion">
+              <img src="img/room/14.jpg" alt="Habitacion 14" class="img-fluid">
+              <div class="details">
+                <h3><a href="contenido/detalles-habitaciones.html">Suite Club Executive</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="habitacion">
+              <img src="img/room/15.jpg" alt="Habitacion 15" class="img-fluid">
+              <div class="details">
+                <h3><a href="contenido/detalles-habitaciones.html">Suite Familiar Dos Dormitorios</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Seccion de situación
+    ============================-->
+    <section id="situacion" class="wow fadeInUp">
+
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h2>Situación de nuestro hotel</h2>
+          <!-- <p>Event venue location info and gallery</p> -->
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 situacion-map">
+            <iframe <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.3138429857336!2d55.11174241500812!3d25.125078283929803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f152f3e47904d%3A0xaf4737facef50d7b!2sCrescent+Rd+-+Dubai+-+Emiratos+%C3%81rabes+Unidos!5e0!3m2!1ses!2ses!4v1558085422247!5m2!1ses!2ses" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6 situacion-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <h3>Crescent Rd - Dubai - Emiratos Árabes Unidos</h3>
+                <p>El Atlantis, de 5 estrellas, se encuentra en la isla Palm Jumeirah de Dubái, y ofrece playa privada de arena y vistas impresionantes al golfo Pérsico. Cuenta con un acuario bajo el agua, acceso gratuito al parque acuático Aquaventure y al acuario Lost Chambers, y ofrece la posibilidad de nadar con delfines. Hay WiFi gratuita en todas las instalaciones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid situacion-gallery-container">
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/1.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/2.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/3.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/4.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/5.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/6.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/7.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="situacion-gallery">
+              <a href="img/situacion-gallery/8.jpg" class="venobox" data-gall="situacion-gallery">
+                <img src="img/situacion-gallery/8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      sección de fotos
+    ============================-->
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Galería</h2>
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
+        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
+        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
+        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
+        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
+        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
+        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
+        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Sección de servicios
+    ============================-->
+    <section id="servicios" class="section-with-bg wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Servicios</h2>
+        </div>
+
+        <div class="row no-gutters servicios-wrap clearfix">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/1.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/2.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/3.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/4.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/5.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/6.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/7.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="servicios-logo">
+              <img src="img/servicios/8.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      sección de reservas
+    ============================-->
+    <section id="reserva" class="section-with-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>RESERVE SU ESTANCIA</h2>
+          <p>SELECCIONE FECHA DE ENTRADA, SALIDA Y TIPO DE HABITACIÓN</p>
+        </div>
+
+        <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class='input-group date' id='datetimepicker7'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="fa fa-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+              </div>
+              <div class='col-md-6'>
+                  <div class="form-group">
+                      <div class='input-group date' id='datetimepicker7'>
+                          <input type='text' class="form-control" />
+                          <span class="input-group-addon">
+                              <span class="fa fa-calendar"></span>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- <div class="col-md-5">
+                 <p> RESERVAR EN NUESTRA WEB OFICIAL TIENE VENTAJAS</p>
+              </div> -->
+        </div>
+
+        
+      </div>
+
+    </section>
+
+    <!--==========================
+      Sección de contacto
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contacto</h2>
+          <p>¿PODEMOS AYUDARLE? HÁGANOS LLEGAR SU CONSULTA Y LE ATENDEREMOS A LA MAYOR BREVEDAD POSIBLE.</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Dirección</h3>
+              <address>Crescent Rd - Dubai - Emiratos Árabes Unidos</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Numero de telefono</h3>
+              <p><a href="tel:+97144262000">+971 4 426 2000</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@palmhotel.com">info@palmhotel.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Tu mensaje se ha enviado. Gracias!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Introduce el email correcto" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Porfavor escribe algun mensaje para nosotros" placeholder="Mensaje"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contacto -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>ThePalm</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
